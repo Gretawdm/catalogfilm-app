@@ -1031,3 +1031,21 @@ header {
   text-decoration: none;
   transition: all 150ms ease-in-out;
 }
+
+.not-found {
+  text-align: center;
+  margin-top: 80px;
+  font-family: sans-serif;
+}
+
+.not-found h2 {
+  color: crimson;
+  font-size: 2.5rem;
+}
+
+.not-found a {
+  margin-top: 1em;
+  display: inline-block;
+  text-decoration: none;
+  color: #0094b4;
+}

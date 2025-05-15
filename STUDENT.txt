@@ -1,2 +1,2 @@
-APP_URL=<url_aplikasi>
+APP_URL=<https://gretawdm.github.io/catalogfilm-app/#/>
 MAP_SERVICE_API_KEY=<eRUXFp7FMvqpNnh7Gbgb>

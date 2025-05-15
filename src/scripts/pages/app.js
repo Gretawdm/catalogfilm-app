@@ -1,6 +1,7 @@
 import routes from '../routes/routes';
 import { getActiveRoute } from '../routes/url-parser';
 import { generateLoaderTemplate } from '../index';
+import NotFound from './not_found/not_found';
 
 class App {
   #content = null;
@@ -36,17 +37,31 @@ class App {
     });
   }
 
+
+  #hiddenNav() {
+    const header = document.getElementById('header');
+    const footer = document.getElementById('footer');
+
+    header.style.display = 'none';
+    footer.style.display = 'none';
+  }
+
   async renderPage() {
     const url = getActiveRoute();
     let page = routes[url];
+    console.log('Active route:', url);
+    console.log('Page found:', page);
 
     if (typeof page === 'function') {
       page = page();
     }
 
-    if (!page || typeof page.render !== 'function') {
-      this.#content.innerHTML = '<h2>Halaman tidak ditemukan</h2>';
-      return;
+    if (page === undefined) {
+      this.#hiddenNav();
+      page = new NotFound();
+      console.log('Page not found:', url);
+    } else {
+      // this.#hashNav();
     }
 
     const loadContent = async () => {
@@ -69,8 +84,8 @@ class App {
 
       if (userLoggedIn && navActions) {
         navActions.innerHTML = `
-        <button id="btn-add-catalog" class="btn-add">+ Tambah Katalog</button>
-      `;
+          <button id="btn-add-catalog" class="btn-add">+ Tambah Katalog</button>
+        `;
 
         const addBtn = document.getElementById('btn-add-catalog');
         addBtn.addEventListener('click', () => {
@@ -86,6 +101,5 @@ class App {
     }
   }
 }
-
 
 export default App;
