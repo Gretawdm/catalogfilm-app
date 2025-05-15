@@ -19,7 +19,7 @@
       "name": "Tambah Catatan",
       "short_name": "Tambah",
       "description": "Tambah catatan baru",
-      "url": "/#/add",
+      "url": "catalogfilm-app/#/add",
       "icons": [{ "src": "/images/megaphone.png", "sizes": "512x512", "type": "image/png" }]
     }
   ],
