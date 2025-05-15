@@ -1,0 +1,42 @@
+{
+  "name": "CatalogFilm App",
+  "short_name": "CatalogFilm",
+  "description": "Aplikasi rekomendasi dan katalog film layaknya Netflix.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#141414",
+  "theme_color": "#e50914",
+  "icons": [
+    {
+      "src": "images/icon.png",
+      "type": "image/png",
+      "sizes": "512x512",
+      "purpose": "any"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Tambah Catatan",
+      "short_name": "Tambah",
+      "description": "Tambah catatan baru",
+      "url": "/#/add",
+      "icons": [{ "src": "/images/megaphone.png", "sizes": "512x512", "type": "image/png" }]
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "/images/Screenshoot-1.png",
+      "sizes": "1280x601",
+      "type": "image/png",
+      "form_factor": "wide",
+      "label": "Tampilan Desktop"
+    },
+    {
+      "src": "/images/mobile.png",
+      "sizes": "359x520",
+      "type": "image/png",
+      "label": "Tampilan Mobile",
+      "form_factor": "narrow"
+    }
+  ]
+}

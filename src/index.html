@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" href="favicon.png">
+
+  <title>App</title>
+
+  <link rel="manifest" href="/manifest.json">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+  <script src="https://unpkg.com/lottie-web@5.10.2/build/player/lottie.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.10.2/lottie.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+
+</head>
+
+<body>
+  <a href="#main-content" class="skip-to-content">Skip to content</a>
+  <header>
+    <div class="main-header container">
+      <a class="brand-name" href="#/">CatalogFilm App</a>
+
+      <nav id="navigation-drawer" class="navigation-drawer">
+        <ul id="nav-list" class="nav-list">
+          <li><a class="list-button" href="#/">Beranda</a></li>
+          <li><a class="list-button" href="#/add">Tambah Cerita</a></li>
+          <li><a class="list-button" href="#/favorite">Favorit</a></li>
+          <button class="subscribeBtn" id="subscribeBtn">Subscribe Notifikasi</button>
+          <a class="logout-button" href="#/logout">
+            <i class="fas fa-sign-out-alt"></i> Keluar
+          </a>
+        </ul>
+      </nav>
+
+      <button id="drawer-button" class="drawer-button">☰</button>
+    </div>
+  </header>
+
+
+
+  <main id="main-content" class="main-content"></main>
+  <div class="container">
+    <hr>
+    <footer class="footer">
+      <div class="footer-content">
+        <span class="footer-title">CatalogFilm App</span>
+        ©2025. All rights reserved.
+      </div>
+    </footer>
+  </div>
+
+
+  </div>
+
+</body>
+
+</html>
