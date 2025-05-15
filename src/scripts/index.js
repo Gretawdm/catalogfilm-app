@@ -69,11 +69,11 @@ document.addEventListener('DOMContentLoaded', async () => {
   if (logoutBtn) {
     logoutBtn.addEventListener('click', (e) => {
       e.preventDefault();
-      getLogout(); // hapus token
+      getLogout(); 
       location.hash = '/login';
       setTimeout(() => {
         window.dispatchEvent(new HashChangeEvent('hashchange'));
-      }, 10); // trigger ulang routing
+      }, 10);
     });
   }
 

@@ -61,7 +61,7 @@ class App {
       page = new NotFound();
       console.log('Page not found:', url);
     } else {
-      // this.#hashNav();
+     
     }
 
     const loadContent = async () => {
